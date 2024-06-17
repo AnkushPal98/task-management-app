@@ -1,0 +1,10 @@
+<app-card>
+    <button [class.active]="selected" (click)="onSelectUser()">
+        <!-- Method 1 - string Interpolation -->
+        <!-- <img src="../../assets/users/{{selectedUser.avatar}}" alt="Avator"> -->
+        <!-- Method 2 - Property Binding -->
+        <!-- <img [src]="'assets/users/'+selectedUser.avatar" [alt]="selectedUser.name"> -->
+        <img [src]="imagePath" [alt]="User.name">
+        <span>{{User.name}}</span>
+    </button> 
+</app-card>
